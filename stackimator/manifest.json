@@ -1,0 +1,34 @@
+{
+    "name": "The Cubes", 
+    "description": "Just give you a random password to use in site, you could store it if you want :/",
+    "version": "0.1.2",
+    "manifest_version": 3,
+    "icons": {
+        "16": "./stock/favicon.png",
+        "32": "./stock/favicon.png",
+        "48": "./stock/favicon.png",
+        "128": "./stock/favicon.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "author" : "Stackimator Inc.",
+    "permissions": [
+        "scripting", 
+        "activeTab",
+        "storage", 
+        "declarativeNetRequest",
+        "webRequest",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["contentScript.js"]
+        }
+    ]
+
+}

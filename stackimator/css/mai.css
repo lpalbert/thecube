@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kode+Mono:wght@400..700&family=Poppins&display=swap');
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+body {
+    width: 620px;
+    background: #1B1B20;
+    height : max-content;
+    font-family: "Chakra Petch", sans-serif;
+}
+img {
+    pointer-events: none;
+}
+img::selection {
+    display: none;
+}
+::selection {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111114;
+    background-clip: content-box;
+    border: 20px solid transparent;
+    border-radius: 50px;  
+}
+::-webkit-scrollbar-track {
+    background : transparent;
+}
+
+.mainBody {
+    margin-top: 20px;
+    padding : 20px 50px;
+    padding-bottom: 65px;
+    
+    & .headTitle {
+        display: flex;
+        align-items: center;
+        gap : 20px;
+
+        & .icon {
+            & .sitemap-icon img {
+                width: max-content;
+                padding : 10px;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                outline : 1px solid rgba(255, 255, 255, 0.1);
+            }
+            & .sitemap-icon {
+                width: 10%;
+                height: max-content;
+            }
+        }
+        & .title {
+            color : white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+
+    & .embed {
+        background :#212128;
+        overflow: hidden;
+        margin-top : 20px;
+        border-radius: 5px;
+        border: 5px solid #212128;
+        outline : 1px solid rgba(255, 255, 255, 0.2);
+        color :#1B1B20;
+        display: flex;
+        gap : 20px;
+        padding : 20px;
+
+        & .sitemap-url, .sitemap-title, .sitemap-description{
+            color : white;
+            opacity: .5;
+            font-size: 1rem;
+            width: 50%;
+        }
+        & .sitemap-url {
+            font-size: .80rem;
+            width: 100%;
+        }
+        & .sitemap-title {
+            font-size: 1.5rem;
+            opacity: .8;
+            margin: 5px 0;
+            width: 85%;
+            font-weight: bold;
+        }
+        & .sitemap-description {
+            opacity:.7;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+      
+    }
+}
