@@ -13,7 +13,7 @@ With just a click, users can easily generate and download secure passwords direc
 1. **Installation**:
    - Download the latest release of The Cube Chrome extension from the [Releases](https://github.com/lpalbert/thecube/releases) page.
    - Alternatively, you can clone this repository and manually load the extension in developer mode in Chrome.
-   - The folder that contains the extension is "stackimator"
+   - The folder that contains the extension is named 'stackimator'
 
 2. **Adding to Chrome**:
    - Navigate to `chrome://extensions/` in your Chrome browser.
@@ -22,9 +22,7 @@ With just a click, users can easily generate and download secure passwords direc
    - The Cube icon should now appear in your Chrome toolbar.
 
 3. **Generating Passwords**: <br><br>
-   To generate the password you just need to enter a site who have a login page, and click the password it automaticaly trigger a confirmation prompt click Yes to apply then click Yes Again to download
-   the password
-   
+   To generate the password, you just need to navigate to a website with a login page. Click on the password field, and it will automatically trigger a confirmation prompt. Click 'Yes' to apply the password, and then click 'Yes' again to download it
 
 ## Contributing
 
